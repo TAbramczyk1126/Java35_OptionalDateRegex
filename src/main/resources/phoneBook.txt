@@ -1,0 +1,4 @@
+Tomek, Warszawa, 123456789
+Adam, Olsztyn, 111222333
+Zenon, Szczytno
+Ola, Halinów, 333444555
