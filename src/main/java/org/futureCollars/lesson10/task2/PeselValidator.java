@@ -3,7 +3,7 @@ package org.futureCollars.lesson10.task2;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class IdValidator {
+public class PeselValidator {
 
     public static void main(String[] args) {
 
