@@ -5,14 +5,13 @@ import java.util.regex.Pattern;
 
 public class PeselValidator {
 
-    public static void main(String[] args) {
+    public boolean isPeselValid(String Pesel) {
 
         Pattern pattern = Pattern.compile("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d");
-        Matcher matcher = pattern.matcher("80112617924");
+        Matcher matcher = pattern.matcher(Pesel);
 
         boolean matches = matcher.matches();
 
-        if (matches) System.out.println("PESEL is correct");
-        else System.out.println("Incorrect data was entered");
+        return matches;
     }
 }
