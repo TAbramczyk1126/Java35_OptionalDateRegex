@@ -5,10 +5,10 @@ import java.util.regex.Pattern;
 
 public class PeselValidator {
 
-    public boolean isPeselValid(String Pesel) {
+    public boolean isPeselValid(String pesel) {
 
         Pattern pattern = Pattern.compile("\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d\\d");
-        Matcher matcher = pattern.matcher(Pesel);
+        Matcher matcher = pattern.matcher(pesel);
 
         boolean matches = matcher.matches();
 
