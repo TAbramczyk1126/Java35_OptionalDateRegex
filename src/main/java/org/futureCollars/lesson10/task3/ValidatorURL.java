@@ -5,13 +5,11 @@ import java.util.regex.Pattern;
 
 public class ValidatorURL {
 
-    public boolean isURL(String URL){
+    public boolean isURL(String URL) {
 
-        Pattern pattern = Pattern.compile("http://www.onet.pl|https://mail.google.com|http://wiadmosci.onet.pl|http://onet.pl");
+        Pattern pattern = Pattern.compile("^(http|https)(://)(www\\.)?[a-zA-Z.]{2,100}\\.[a-zA-Z]{2,3}");
         Matcher matcher = pattern.matcher(URL);
 
-        boolean matches = matcher.matches();
-
-        return matches;
+        return matcher.matches();
     }
 }

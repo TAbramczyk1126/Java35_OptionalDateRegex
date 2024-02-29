@@ -9,6 +9,6 @@ class ValidatorURLTest {
     @Test
     void shouldDisplayTrueIfEnteredTextIsURL() {
         ValidatorURL validatorURL = new ValidatorURL();
-        assertTrue(validatorURL.isURL("http://www.onet.pl"));
+        assertTrue(validatorURL.isURL("http://www.onet.edu"));
     }
 }
